@@ -1,0 +1,164 @@
+array_function.php
+
+every function will do.
+1. Array to string convertion
+2. String to array convertion
+3. Array_functions
+4. String functions.
+5. array to object
+6. object to array.
+7. loops.
+8. conditions.
+
+done------------------------------------------------------------------------------------------------------------------ 
+
+1. Array to string convertion.
+2. String to array convertion.
+3. array change case(keys/ values). 
+4. array_chunk.
+5. array_column.
+6. array_combine.
+7. array_count_values(count how many time same value define in array (case sensitive example:- Lekhraj and lekhraj are count 
+												Lekhraj=>1, 
+												lekhraj=>1)).
+8. array_icount_values(work same like array_count_values but case insensitive example:- Lekhraj and lekhraj are count 
+								Lekhraj=>2 )).
+9. Array_diff_key().
+10. Array_diff().
+11. array_fill_keys().
+12. array_fil().
+13. array_flip().
+14. array_intersect
+15. array_intersect_assoc
+16. array_intersect_key
+17. array_intersect_uassoc
+18. array_intersect_ukey
+19. array_keys
+20. array_values
+21. array_slice
+22. array_key_exists
+23. array_map.
+24. array_multisort.
+25. array_pad.
+26. array_pop.
+27. array_push
+28. array_replace.
+29. array_reverse.
+30. array_search.
+31. array_shift.
+32. array_unshift.
+33. array_sum.
+34. array_uintersect_assoc
+35. array_uintersect_uassoc
+36. array_uintersect.
+37. array_unique.
+38. compact. :-(Create array containing variables and their values)
+39. count.:-(Returns the number of elements in an array)
+40. in_array:- (The in_array() function searches an array for a specific value.)
+41. current:- (Output the value of the current element in an array:)
+42. end.:-(Output the value of the current and the last element in an array)
+43. next:- (Output the value of the current and the next element in the array)
+44. prev :-(Output the value of the current, next and previous element in the array)
+45. reset:-(Returns the value of the first element in the array on success, or FALSE if the array is empty)
+46. key :-(Returns the key of the array element that is currently being pointed to by the internal pointer)
+	(example:--  <?php
+				$people=array("Peter","Joe","Glenn","Cleveland");
+				echo "The key from the current position is: " . key($people);
+			?>
+		output:--The key from the current position is: 0
+		)
+
+47. krsort:- (Sort an array by key in reverse order)
+48. ksort:— (Sort an array by key).
+49. natcasesort:- (Sort an array using a case insensitive "natural order" algorithm).
+50. pos:- same the current function(41). 
+51. rsort — Sort an array in reverse order
+52. sort:- (Sort an array)
+
+
+
+not done----------------------------------------------------------------------------------------------------------
+
+1. array to object
+2. object to array
+3. can we fetch specify column value from specify array. (if we want to single array of in multidimantional array). solution:- use the array name and put the key name 
+		of array which went to retrive the coulmn value.
+ 
+ <?php
+$records = array(
+    array(
+        'id' => 2135,
+        'first_name' => 'John',
+        'last_name' => 'Doe',
+    ),
+    array(
+        'id' => 3245,
+        'first_name' => 'Sally',
+        'last_name' => 'Smith',
+    ),
+    array(
+        'id' => 5342,
+        'first_name' => 'Jane',
+        'last_name' => 'Jones',
+    ),
+    array(
+        'id' => 5623,
+        'first_name' => 'Peter',
+        'last_name' => 'Doe',
+    )
+);			solution:-  $a=array(array("Volvo","XC90"),$b=array("BMW"=>"X5","Toyota"=>"Highlander"));
+
+						echo "<pre>";
+
+
+						$c=implode(array_keys($b,"X5"));
+
+							echo $c; Result:- BMW
+ 
+
+4. array_keys(isue rise when an array contain two array and we want the key of second array). solution:- we find by array numaric array or we can put an array 
+		
+					inside a array and then find the key..
+5. array_diff_uassoc().
+6. array_filter().
+7. array_merge_recursive.
+8. array_merge::-- can we combine keys also.
+
+			<?php
+			$array1 = array(0 => 'zero_a', 2 => 'two_a', 3 => 'three_a');
+			$array2 = array("color" => 'one_b', 3 => 'three_b', 4 => 'four_b');
+			//$result = $array1 + $array2;
+			$result= array_merge($array1, $array2);
+			echo "<pre>";
+			print_r($result);
+
+9. array_multisort.
+10. array_rand.
+11.  array_reduce().
+12. array_splice
+13. array_udiff_assoc.
+14. array_udiff_uassoc.
+15. array_udiff.
+16. current.
+17. each
+18. usort
+
+echo $array[5];
+
+
+
+	class a {
+
+
+		function myfunction()
+				{
+	
+				}
+
+			}
+
+		$obj= new a();
+		$obj->myfunctiion();
+
+
+

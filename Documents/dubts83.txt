@@ -1,0 +1,23 @@
+echo "<pre>";
+  
+              $myData=App\model\laravel_curd::where('fname', '=', 'satpal')->get();
+              
+
+			$myData2=App\model\laravel_curd::first();
+
+
+
+		              print_r($myData);
+              
+
+				echo "<hr>";
+              
+
+				print_r($myData2);
+
+
+
+
+
+
+                    return View('test',compact('myData'));
